@@ -1,0 +1,224 @@
+✅ Aqui está o **CSS separado** (`style.css`) do seu site do Agrinho 2026:
+
+### 📁 `style.css`
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --verde: #2e7d32;
+    --amarelo: #f9c74f;
+    --verde-escuro: #1b5e20;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--verde);
+    color: white;
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.ano {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--amarelo);
+}
+
+.aluno {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* Navegação */
+nav {
+    background: rgba(255,255,255,0.95);
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: var(--verde-escuro);
+    transform: translateY(-3px);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 6rem 1rem;
+    background: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 125, 50, 0.75);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--amarelo);
+    color: #333;
+    padding: 1.1rem 3rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 1.15rem;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    background: #f8b81f;
+    box-shadow: 0 8px 20px rgba(249, 199, 79, 0.4);
+}
+
+/* Seções */
+section {
+    padding: 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--verde);
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 90px;
+    height: 5px;
+    background: var(--amarelo);
+    display: block;
+    margin: 15px auto;
+    border-radius: 3px;
+}
+
+/* Sobre */
+.sobre {
+    background: white;
+    border-radius: 20px;
+    padding: 3.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.8rem;
+}
+
+/* Footer */
+footer {
+    background: var(--verde);
+    color: white;
+    text-align: center;
+    padding: 3.5rem 1rem;
+    margin-top: 4rem;
+}
+
+.bandeira {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+```
+
+---
+Quer que eu também faça uma versão **ainda mais moderna** ou com **animações extras**?
