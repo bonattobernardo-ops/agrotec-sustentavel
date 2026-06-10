@@ -1,1 +1,317 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Bernardo Daleves Bonatto</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        
+        :root {
+            --verde: #2e7d32;
+            --amarelo: #f9c74f;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: var(--verde);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+        
+        .ano {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--amarelo);
+        }
+        
+        .aluno {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        nav {
+            background: rgba(255,255,255,0.95);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--verde);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            color: #1b5e20;
+            transform: translateY(-2px);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(46, 125, 50, 0.75);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--amarelo);
+            color: #333;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            background: #f8b81f;
+        }
+        
+        section {
+            padding: 4rem 1rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: var(--verde);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: var(--amarelo);
+            display: block;
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+        
+        .sobre {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        footer {
+            background: var(--verde);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        .bandeira {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🌱 AGRINHO</div>
+        <div class="ano">2026</div>
+        <div class="aluno">Bernardo Daleves Bonatto</div>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projeto">Meu Projeto</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Plantando o Futuro</h1>
+            <p>Conectando a agricultura familiar ao desenvolvimento sustentável</p>
+            <a href="#projeto" class="btn">Conheça meu projeto →</a>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre">
+            <h3>Olá! Eu sou o Bernardo Daleves Bonatto</h3>
+            <p style="font-size: 1.2rem; margin: 1.5rem 0;">
+                Sou um estudante apaixonado pela agricultura e pelo futuro do nosso campo. 
+                Participo do Agrinho 2026 com muito entusiasmo para mostrar como a tecnologia 
+                e a sustentabilidade podem andar juntas.
+            </p>
+            <p><strong>Idade:</strong> [sua idade] • <strong>Escola:</strong> [sua escola]</p>
+        </div>
+    </section>
+
+    <section id="projeto" style="background: #f1f8e9;">
+        <h2>Meu Projeto Agrinho 2026</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c0a8a" alt="Agricultura">
+                <div class="card-content">
+                    <h3>Título do Projeto</h3>
+                    <p>Escreva aqui o título do seu projeto (ex: Agricultura 4.0 na Propriedade Familiar)</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500595046742-5f3e5c1c6f3f" alt="Sustentabilidade">
+                <div class="card-content">
+                    <h3>Objetivo</h3>
+                    <p>Promover o uso consciente dos recursos naturais e a tecnologia no campo.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1622388836882-5e9d8e2b0f4d" alt="Tecnologia">
+                <div class="card-content">
+                    <h3>Como vai funcionar</h3>
+                    <p>Descreva aqui a ideia principal do seu projeto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="grid">
+            <!-- Você pode substituir por suas próprias fotos -->
+            <div class="card">
+                <img src="https://via.placeholder.com/600x400/2e7d32/ffffff?text=Bernardo+no+Campo" alt="Foto 1">
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/600x400/f9c74f/333?text=Projeto+em+Desenvolvimento" alt="Foto 2">
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/600x400/2e7d32/ffffff?text=Fam%C3%ADlia+no+S%C3%ADtio" alt="Foto 3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bandeira">
+            🇧🇷
+        </div>
+        <p><strong>Bernardo Daleves Bonatto</strong> © 2026 - Agrinho SENAR</p>
+        <p>Feito com ❤️ e muito carinho pela agricultura brasileira</p>
+    </footer>
+
+    <script>
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+```
+
+🌱
